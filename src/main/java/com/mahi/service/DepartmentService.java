@@ -3,6 +3,7 @@ package com.mahi.service;
 import java.util.List;
 
 import com.mahi.entity.Department;
+import com.mahi.error.DepartmentNotFoundException;
 
 public interface DepartmentService {
 
@@ -10,7 +11,7 @@ public interface DepartmentService {
 
 	public Department saveDepartment(Department department);
 
-	public Department fetchDepartmentById(Long departmentId);
+	public Department fetchDepartmentById(Long departmentId) throws DepartmentNotFoundException;
 
 	public void deleteDepartmentById(Long departmentId);
 
