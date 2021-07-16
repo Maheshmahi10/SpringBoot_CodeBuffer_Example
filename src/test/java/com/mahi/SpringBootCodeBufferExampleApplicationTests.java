@@ -10,4 +10,5 @@ class SpringBootCodeBufferExampleApplicationTests {
 	void contextLoads() {
 	}
 
+	
 }
